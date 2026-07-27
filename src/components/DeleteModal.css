@@ -1,0 +1,107 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.modal h2{
+    margin-bottom:15px;
+    color:#ef4444;
+}
+
+.modal p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.modal input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:20px;
+    box-sizing:border-box;
+}
+
+.modal input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.verify-btn{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.verify-btn:hover{
+    background:#16a34a;
+}
+
+.cancel-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.cancel-btn:hover{
+    background:#dc2626;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .modal h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .modal p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .modal input {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        margin: 15px 0;
+        box-sizing: border-box;
+    }
+    .modal-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .modal-buttons button {
+        width: 100%;
+        padding: 12px;
+    }
+}

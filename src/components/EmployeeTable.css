@@ -1,0 +1,67 @@
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employee-table th {
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.employee-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.employee-table tr:hover {
+    background: #eef4ff;
+}
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+.edit-btn {
+    background: #22c55e;
+}
+.edit-btn:hover {
+    background: #16a34a;
+}
+.delete-btn {
+    background: red;
+}
+.delete-btn:hover {
+    background: #ce4d4d;
+}
+
+@media (max-width: 768px) {
+    .employee-table th,
+    .employee-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .edit-btn, .delete-btn {
+        width: 15vw;
+        margin: 5px 0;
+        padding: 10px;
+    }
+}
