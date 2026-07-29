@@ -20,7 +20,7 @@ function Register() {
 
       navigate('/login');
     } catch (error) {
-      toast.alert("Registration Failed");
+      toast.error("Registration Failed");
     }
   }
   return (
